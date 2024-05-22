@@ -1,0 +1,200 @@
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+    background-color: black;
+}
+
+/*Cabeçalho*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+}
+
+header {
+    padding: 20px 0;
+    padding: 1px 0; /* Reduzindo o padding para diminuir o tamanho do cabeçalho */
+    background-color: transparent; /* Define a cor de fundo como transparente */
+    padding: 5px 0; /* Reduzindo o padding para diminuir o tamanho do cabeçalho */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #1d1a1a;
+}
+
+header h1 {
+    margin: 0;
+    color: rgb(236, 228, 228);
+    font-size: 40px; /* Reduzindo o tamanho do texto do cabeçalho */
+}
+
+/*semestres*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #0c0c0c;
+    padding-right: 1.5px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.semestre {
+    margin-top: 40px;
+    background-color: #0c0c0c;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.semestre h3 {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.semestre table {
+    margin-top: 10px;
+}
+
+section {
+    background-color: #0707079f;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grades {
+    color: white;
+    padding-left: 1.5rem ;
+}
+
+.nome-curso h1 {
+    color: white;
+    text-align: center;
+}
+
+
+/*RODAPÉ*/
+footer {
+    width: 100%;
+    color:white;
+}
+
+#footer-content{
+    background-color: #181717;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer-logo h1{
+    margin: 0.75rem;
+}
+
+#footer-list{
+    display: flex;
+    flex-direction: column;
+    gap:0.75rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+#footer-list a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer-sugestion{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#sugestion-box{
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+#sugestion-box input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#sugestion-box button{
+    border: none;
+    padding: 0px 1.25rem;
+    font-size: 1.25rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+#sugestion-box button:hover{
+
+    opacity: 0.8;
+
+}
+
+#footer_copyright{
+
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-widht: 768px) {
+    #footer-content{
+        grid-template-columns: repeat(2, 1fr);
+        gap:2rem;
+    }
+}
+
+@media screen and (max-widht: 426px) {
+    #footer-content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem ;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Tecnologia Geral</title>
+    <link rel="stylesheet" href="CSS/quizti.css">
+</head>
+<bod<header>
+    <div class="container">
+        <h1>Unitec</h1>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="#Contatos">Contato</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+</nav>
+<br>
+
+<br>
+   
+<div class="nome-quiz">
+    <h1>Tecnologia Geral</h1>
+</div><nav>
+        <div class="container">
+
+        <form>
+            <h3><b>Pergunta 1:</b> Qual empresa é conhecida por seus smartphones, tablets e computadores?</h3>
+            <label><input type="radio" name="q1" value="a"> Microsoft</label><br>
+            <label><input type="radio" name="q1" value="b"> Apple</label><br>
+            <label><input type="radio" name="q1" value="c"> Samsung</label><br>
+            <label><input type="radio" name="q1" value="d"> Google</label><br><br>
+            
+            <h3><b>Pergunta 2:</b> O que é um navegador da web?</h3>
+            <label><input type="radio" name="q2" value="a"> Um software para editar imagens</label><br>
+            <label><input type="radio" name="q2" value="b"> Um programa para ouvir música</label><br>
+            <label><input type="radio" name="q2" value="c"> Um aplicativo para enviar e-mails</label><br>
+            <label><input type="radio" name="q2" value="d"> Um programa para acessar páginas da web</label><br><br>
+            
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+
+            // Respostas corretas para este quiz específico
+            const respostasCorretas = {
+                q1: 'b', // Resposta correta para a pergunta 1
+                q2: 'd'  // Resposta correta para a pergunta 2
+            };
+
+            // Obtém as respostas selecionadas pelo usuário
+            const respostasUsuario = {
+                q1: document.querySelector('input[name="q1"]:checked').value,
+                q2: document.querySelector('input[name="q2"]:checked').value
+            };
+
+            // Calcula o número de respostas corretas
+            let numCorretas = 0;
+            for (const questao in respostasCorretas) {
+                if (respostasUsuario[questao] === respostasCorretas[questao]) {
+                    numCorretas++;
+                }
+            }
+
+            // Exibe o resultado
+            alert(`Você acertou ${numCorretas} de ${Object.keys(respostasCorretas).length} questões.`);
+        });
+    </script>
+
+
+<!--Rodapé-->
+<footer>
+    <div id="footer-content">
+        <div id="footer-logo"> <!--Logo-->
+            <h1>UNITEC</h1>
+            <p>Universidade de Tecnologia</p>
+        </div>
+        <ul id="footer-list"> <!--Lista contatos-->
+            <li id="Contatos"> <h3>Contatos</h3> </li>
+            <li>
+                <a>Telefone</a>
+            </li>
+            <li>
+                <a>Email</a>
+            </li>
+            <li>
+                <a>Rua XXX, Bairro XXX, NXX - SP</a>
+            </li>
+        </ul>
+        <ul id="footer-list"> <!--Lista navegação pelo rodapé-->
+            <li> 
+                <a href="index.html">Inicio</a>
+             </li>
+            <li>
+                <a href="cursos.html">Cursos</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+            <li>
+            </li>
+        </ul>
+    
+        <div id="footer_sugestion">
+            <H3>Ouvidoria</H3>
+            <p>Algum elogio, dica ou reclamação? Conta pra gente:</p>
+            <div id="sugestion-box">
+                <input type="input-sugestion" id="sugestion">
+                <button>
+                    <p>enviar</p>
+                </button>
+            </div>
+        </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 UNITEC
+        </div>
+    </footer>
+</body>
+</html>

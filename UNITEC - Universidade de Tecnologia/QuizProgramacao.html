@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Programação</title>
+    <link rel="stylesheet" href="CSS/quizprogramacao.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Unitec</h1>
+        </div>
+    </header>
+
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="#Contatos">Contato</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+<br>
+
+<br>
+
+<div class="nome-quiz">
+    <h1>Programação</h1>
+</div><nav>
+        <div class="container">
+    
+        
+        <form>
+            <h3><br>Pergunta 1:</b> Qual das seguintes não é uma linguagem de programação?</h3>
+            <br>
+            <label><input type="radio" name="q1" value="a"> Python</label><br>
+            <label><input type="radio" name="q1" value="b"> HTML</label><br>
+            <label><input type="radio" name="q1" value="c"> Microsoft Word</label><br>
+            <label><input type="radio" name="q1" value="d"> Java</label><br><br>
+            
+            <h3><b>Pergunta 2:</b> O que significa CSS em programação web?</h3>
+            <br>
+            <label><input type="radio" name="q2" value="a"> Creative Style Sheets</label><br>
+            <label><input type="radio" name="q2" value="b"> Computer Style Sheets</label><br>
+            <label><input type="radio" name="q2" value="c"> Cascading Style Sheets</label><br>
+            <label><input type="radio" name="q2" value="d"> Colorful Style Sheets</label><br><br>
+            
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+
+            // Respostas corretas para este quiz específico
+            const respostasCorretas = {
+                q1: 'c', // Resposta correta para a pergunta 1
+                q2: 'c'  // Resposta correta para a pergunta 2
+            };
+
+            // Obtém as respostas selecionadas pelo usuário
+            const respostasUsuario = {
+                q1: document.querySelector('input[name="q1"]:checked').value,
+                q2: document.querySelector('input[name="q2"]:checked').value
+            };
+
+            // Calcula o número de respostas corretas
+            let numCorretas = 0;
+            for (const questao in respostasCorretas) {
+                if (respostasUsuario[questao] === respostasCorretas[questao]) {
+                    numCorretas++;
+                }
+            }
+
+            // Exibe o resultado
+            alert(`Você acertou ${numCorretas} de ${Object.keys(respostasCorretas).length} questões.`);
+        });
+    </script>
+</body>
+</html>

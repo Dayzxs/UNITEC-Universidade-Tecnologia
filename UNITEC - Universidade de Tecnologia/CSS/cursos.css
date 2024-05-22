@@ -1,0 +1,237 @@
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+    background-color: black;
+}
+
+/*Cabeçalho*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+}
+
+header {
+    padding: 20px 0;
+    padding: 1px 0; /* Reduzindo o padding para diminuir o tamanho do cabeçalho */
+    background-color: transparent; /* Define a cor de fundo como transparente */
+    padding: 5px 0; /* Reduzindo o padding para diminuir o tamanho do cabeçalho */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #1d1a1a;
+}
+
+header h1 {
+    margin: 0;
+    color: rgb(236, 228, 228);
+    font-size: 40px; /* Reduzindo o tamanho do texto do cabeçalho */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.card {
+    flex: 0 0 300px; /* Largura fixa para cada cartão */
+    margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p {
+    margin: 10px;
+}
+
+.card {
+    margin: 5px; /* Espaçamento de 10 pixels em todas as direções */
+}
+
+.carousel {
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    flex-wrap: wrap; /* Permite que os cards sejam quebrados em várias linhas */
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 100px); /* Define a largura dos cards (33.33% com 20px de espaçamento) */
+    margin: 5px; /* Espaçamento entre os cards */
+    background-color: white; /* Fundo branco nos cards */
+    /* Outros estilos dos cards (bordas, sombras, etc.) */
+}
+
+
+/* styles.css */
+
+/* Estilo geral dos cartões */
+.card {
+    background-color: rgba(255, 255, 255, 0.96);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das imagens nos cartões */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo dos títulos dos cursos */
+.card h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Estilo das descrições dos cursos */
+.card p {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Frase destque*/
+
+.highlighted-phrase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh; /* Centraliza verticalmente na página inteira */
+    background-color: #5a5454; /* Cor de fundo */
+    font-size: 29px; /* Tamanho da fonte */
+    animation: fadeIn 3s ease-in-out; /* Animação de fade-in */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/*RODAPÉ*/
+footer {
+    width: 100%;
+    color:white;
+}
+
+#footer-content{
+    background-color: #181717;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer-logo h1{
+    margin: 0.75rem;
+}
+
+#footer-list{
+    display: flex;
+    flex-direction: column;
+    gap:0.75rem;
+    list-style: none;
+}
+
+#footer-list a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer-sugestion{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#sugestion-box{
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+#sugestion-box input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#sugestion-box button{
+    border: none;
+    padding: 0px 1.25rem;
+    font-size: 1.25rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+#sugestion-box button:hover{
+
+    opacity: 0.8;
+
+}
+
+#footer_copyright{
+
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-widht: 768px) {
+    #footer-content{
+        grid-template-columns: repeat(2, 1fr);
+        gap:2rem;
+    }
+}
+
+@media screen and (max-widht: 426px) {
+    #footer-content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem ;
+    }
+}

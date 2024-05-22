@@ -1,0 +1,566 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9e2e2;
+    color: #fff;
+
+}
+
+body {
+    background-image: url('IMG/1930503.webp'); 
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: #181717;
+    padding: 20px 0;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #1d1a1a;
+}
+
+main {
+    padding: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+input[type="text"],
+button {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    width: 200px;
+}
+
+
+/* estilo para tornar a imagem imersiva */
+main {
+    position: relative;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+
+/*estilo para tornar o GIF imersivo */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    overflow: hidden; /* Para ocultar o conteúdo que excede o tamanho da tela */
+}
+
+.center-container img {
+    width: 100%; /* Tornando a imagem ocupar toda a largura da tela */
+    height: auto;
+    object-fit: cover; /* Ajustando a proporção para cobrir toda a largura */
+    
+}
+
+@keyframes animate {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Diminua a imersividade do GIF */
+main img {
+    max-width: 100%;
+    margin-bottom: -100px;
+}
+
+/* Ajuste o cabeçalho */
+header {
+    background-color: #837c7c;
+    padding: 1px 0; /* Reduzindo o padding para diminuir o tamanho do cabeçalho */
+}
+
+header h1 {
+    margin: 0;
+    color: rgb(236, 228, 228);
+    font-size: 40px; /* Reduzindo o tamanho do texto do cabeçalho */
+}
+
+header {
+    background-color: transparent; /* Define a cor de fundo como transparente */
+    padding: 5px 0; /* Reduzindo o padding para diminuir o tamanho do cabeçalho */
+}
+
+header h1 {
+    margin: 0;
+    color: rgb(236, 228, 228);
+    font-size: 40px; /* Reduzindo o tamanho do texto do cabeçalho */
+}
+
+
+/*Pagina dos cursos CSS*/
+
+/* styles.css */
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.card {
+    flex: 0 0 300px; /* Largura fixa para cada cartão */
+    margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p {
+    margin: 10px;
+}
+
+.card {
+    margin: 5px; /* Espaçamento de 10 pixels em todas as direções */
+}
+
+.carousel {
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    flex-wrap: wrap; /* Permite que os cards sejam quebrados em várias linhas */
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 100px); /* Define a largura dos cards (33.33% com 20px de espaçamento) */
+    margin: 5px; /* Espaçamento entre os cards */
+    background-color: white; /* Fundo branco nos cards */
+    /* Outros estilos dos cards (bordas, sombras, etc.) */
+}
+
+
+/* styles.css */
+
+/* Estilo geral dos cartões */
+.card {
+    background-color: rgb(209, 199, 199);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das imagens nos cartões */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo dos títulos dos cursos */
+.card h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Estilo das descrições dos cursos */
+.card p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Frase destque*/
+
+.highlighted-phrase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh; /* Centraliza verticalmente na página inteira */
+    background-color: #5a5454; /* Cor de fundo */
+    font-size: 29px; /* Tamanho da fonte */
+    animation: fadeIn 3s ease-in-out; /* Animação de fade-in */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* styles.css */
+
+/* Estilo do título "Sobre a Faculdade" */
+.about-faculdade h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Estilo do texto sobre a faculdade */
+.about-faculdade p {
+    font-size: 1rem;
+    color: #cfc7c7;
+    line-height: 1.5;
+}
+
+/* Estilo do título "Meios de Contato" */
+.contact-info h2 {
+    font-size: 1.5rem;
+    color: #faf6f6;
+}
+
+/* Estilo da lista de meios de contato */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo dos itens da lista de meios de contato */
+.contact-info li {
+    font-size: 1rem;
+    color: #cccaca;
+    margin-bottom: 10px;
+}
+
+/* Estilo dos links de email */
+.contact-info a {
+    color: #0074d9;
+    text-decoration: none;
+}
+
+
+/* styles.css */
+
+/* Centraliza o conteúdo verticalmente e horizontalmente */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Isso centraliza verticalmente na página inteira */
+    background-color: #131212; /* Cor de fundo */
+}
+
+/* Estilo do texto sobre a faculdade e meios de contato */
+.about-faculdade, .contact-info {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Estilo dos links de email */
+.contact-info a {
+    color: #0074d9;
+    text-decoration: none;
+}
+
+
+
+
+/*Pagina do curso 3 - TADS*/
+
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/*Tamanho da tabela*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+/*Cabeçalho*/
+header {
+    background-color: #0c0c0c;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #ccc;
+}
+/*Cor do fundo geral*/
+section {
+    background-color: #0707079f;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #0c0c0c;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.semestre {
+    margin-top: 40px;
+    background-color: #0c0c0c;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.semestre h3 {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.semestre table {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+/*Quiz de TI*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#quizzes {
+    margin-top: 50px;
+}
+
+.quiz {
+    background-color: #576f86;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.quiz h2 {
+    color: #0b0ff1;
+    margin-bottom: 10px;
+}
+
+.quiz p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #05315e;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+/*CSS para pagina 1 do quizz geral*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #131212;
+    color: #f7f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background-color: #3a3939;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+/* Estilos para o cabeçalho na página principal */
+.header-main {
+    background-color: #ffffff00; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+}
+
+/* Estilos para o cabeçalho nas páginas internas (cursos e contatos) */
+.header-inner {
+    background-color: #ddd; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    padding: 15px 0; /* Espaçamento interno */
+}
